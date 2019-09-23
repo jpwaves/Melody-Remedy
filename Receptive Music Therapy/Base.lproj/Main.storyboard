@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gdo-f2-8BQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Receptive View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ReceptiveViewController" customModule="Receptive_Music_Therapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zhf-Zh-6is">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2H-gv-YQo">
+                                <rect key="frame" x="20" y="94" width="374" height="127"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Receptive Music Therapy">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="46" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="3" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dwU-dv-Xwg">
+                                <rect key="frame" x="125" y="562" width="164" height="75"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Aa4-L0-OMk"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Begin">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="22" name="Avenir-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="testButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="RYr-Cx-oSK"/>
+                                    <segue destination="V0f-lb-vli" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="rrc-ZR-bbI">
+                                        <segue key="commit" inheritsFrom="parent" id="MHS-Rc-Ydu"/>
+                                        <segue key="preview" inheritsFrom="commit" id="8Lg-zB-ohE"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oBJ-cO-bOO">
+                                <rect key="frame" x="157" y="672" width="100" height="75"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="R9E-Kj-C0y"/>
+                                    <constraint firstAttribute="height" constant="75" id="xKZ-eW-B9V"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Back">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="22" name="Avenir-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="testButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="qBF-bI-aMp"/>
+                                    <segue destination="Gdo-f2-8BQ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Kzz-L1-uDI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zhf-Zh-6is" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="40j-KL-3nk"/>
+                            <constraint firstItem="oBJ-cO-bOO" firstAttribute="top" secondItem="dwU-dv-Xwg" secondAttribute="bottom" constant="35" id="4B5-NQ-RpL"/>
+                            <constraint firstItem="oBJ-cO-bOO" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="5sb-0p-Klg"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="Zhf-Zh-6is" secondAttribute="trailing" id="6Oa-kx-NDg"/>
+                            <constraint firstItem="Zhf-Zh-6is" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="9Ci-XJ-bIM"/>
+                            <constraint firstItem="Zhf-Zh-6is" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="RGg-pa-OGd"/>
+                            <constraint firstItem="Zhf-Zh-6is" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="ehI-7v-FLe"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="dwU-dv-Xwg" secondAttribute="bottom" constant="225" id="nKU-ww-Y6h"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="dwU-dv-Xwg" secondAttribute="trailing" constant="125" id="qGJ-X0-e1q"/>
+                            <constraint firstItem="dwU-dv-Xwg" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="125" id="sy5-Hk-rZc"/>
+                            <constraint firstAttribute="trailing" secondItem="P2H-gv-YQo" secondAttribute="trailing" constant="20" id="t05-nr-BzD"/>
+                            <constraint firstItem="P2H-gv-YQo" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="50" id="xXe-P1-jm2"/>
+                            <constraint firstItem="P2H-gv-YQo" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" constant="20" id="zch-3d-0TA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                    </view>
+                    <connections>
+                        <outlet property="gradientBackground" destination="Zhf-Zh-6is" id="t88-0w-aBD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
+        </scene>
+        <!--Transition View Controller-->
+        <scene sceneID="NTb-lD-gAD">
+            <objects>
+                <viewController id="V0f-lb-vli" customClass="TransitionViewController" customModule="Receptive_Music_Therapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uPr-9y-wPp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsW-zi-KFM">
+                                <rect key="frame" x="20" y="144" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9By-EU-uvo"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Music is about to play. Please wear headphones or earbuds to fully experience the impact of the music therapy.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.36318210659898476" green="0.36318210659898476" blue="0.36318210659898476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="headphones" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zlN-W6-dXb">
+                                <rect key="frame" x="107" y="359" width="200" height="198.5"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9VG-Uk-iUN"/>
+                                    <constraint firstAttribute="width" constant="200" id="JC5-C3-Uft"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqt-OM-w3x">
+                                <rect key="frame" x="80" y="722" width="254" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9aI-ns-rxy"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tap the screen when your headphones are plugged in.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.41957002878189087" green="0.41963285207748413" blue="0.41955021023750305" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="zlN-W6-dXb" firstAttribute="centerY" secondItem="uPr-9y-wPp" secondAttribute="centerY" constant="10" id="59p-jE-L46"/>
+                            <constraint firstItem="utf-gx-vyW" firstAttribute="trailing" secondItem="DsW-zi-KFM" secondAttribute="trailing" constant="20" id="IwH-T3-Rpz"/>
+                            <constraint firstItem="DsW-zi-KFM" firstAttribute="leading" secondItem="utf-gx-vyW" secondAttribute="leading" constant="20" id="L52-z4-vyH"/>
+                            <constraint firstItem="utf-gx-vyW" firstAttribute="bottom" secondItem="Fqt-OM-w3x" secondAttribute="bottom" constant="90" id="ObO-fi-Nw1"/>
+                            <constraint firstItem="DsW-zi-KFM" firstAttribute="top" secondItem="utf-gx-vyW" secondAttribute="top" constant="100" id="QfR-Sr-uYV"/>
+                            <constraint firstItem="Fqt-OM-w3x" firstAttribute="leading" secondItem="utf-gx-vyW" secondAttribute="leading" constant="80" id="Wly-kB-mrG"/>
+                            <constraint firstItem="utf-gx-vyW" firstAttribute="trailing" secondItem="Fqt-OM-w3x" secondAttribute="trailing" constant="80" id="XNe-ZJ-ovf"/>
+                            <constraint firstItem="zlN-W6-dXb" firstAttribute="centerX" secondItem="uPr-9y-wPp" secondAttribute="centerX" id="q6W-Qq-Xgv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="utf-gx-vyW"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="X9Q-K6-UK2" appends="YES" id="iJ1-1i-hu8"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="aA9-4v-44c"/>
+                    <connections>
+                        <outlet property="textContinue" destination="Fqt-OM-w3x" id="r8m-Rs-oXr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3tC-us-DhT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="X9Q-K6-UK2">
+                    <connections>
+                        <action selector="screenTapped:" destination="V0f-lb-vli" id="vXm-uY-dab"/>
+                        <segue destination="K1M-DN-8v8" kind="presentation" identifier="toMusic" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="gMH-T3-bdb"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="901" y="121"/>
+        </scene>
+        <!--Music Player View Controller-->
+        <scene sceneID="x5t-Ye-4oW">
+            <objects>
+                <viewController id="K1M-DN-8v8" customClass="MusicPlayerViewController" customModule="Receptive_Music_Therapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W9H-BA-e5B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHQ-f6-EHN">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="r2k-5a-jxm" kind="presentation" identifier="abc" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Tcb-jY-bRc"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xv5-X0-wYA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMP-Tq-YDL">
+                                <rect key="frame" x="50" y="348" width="314" height="200"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.29732983732876711" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2CS-t9-iR0"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="While the music plays, concentrate on your emotions and how the music makes you feel.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.36318210659898476" green="0.36318210659898476" blue="0.36318210659898476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xv5-X0-wYA" firstAttribute="centerY" secondItem="W9H-BA-e5B" secondAttribute="centerY" id="1v1-ZH-6BO"/>
+                            <constraint firstItem="xv5-X0-wYA" firstAttribute="leading" secondItem="K68-hY-omb" secondAttribute="leading" id="4T2-PS-arC"/>
+                            <constraint firstAttribute="bottom" secondItem="xv5-X0-wYA" secondAttribute="bottom" id="IwH-fY-CFf"/>
+                            <constraint firstItem="K68-hY-omb" firstAttribute="trailing" secondItem="xv5-X0-wYA" secondAttribute="trailing" id="N8K-0r-xmr"/>
+                            <constraint firstItem="qMP-Tq-YDL" firstAttribute="leading" secondItem="K68-hY-omb" secondAttribute="leading" constant="50" id="YYS-qI-8jq"/>
+                            <constraint firstItem="qMP-Tq-YDL" firstAttribute="centerY" secondItem="W9H-BA-e5B" secondAttribute="centerY" id="bgV-rE-xB9"/>
+                            <constraint firstItem="xv5-X0-wYA" firstAttribute="top" secondItem="W9H-BA-e5B" secondAttribute="top" id="rdP-Rn-btB"/>
+                            <constraint firstAttribute="trailing" secondItem="qMP-Tq-YDL" secondAttribute="trailing" constant="50" id="w3K-Wq-T1s"/>
+                            <constraint firstItem="xv5-X0-wYA" firstAttribute="centerX" secondItem="W9H-BA-e5B" secondAttribute="centerX" id="x1t-eE-eb0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K68-hY-omb"/>
+                    </view>
+                    <connections>
+                        <outlet property="blurredBackground" destination="xv5-X0-wYA" id="ppI-7C-zD6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QFe-ut-s1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901" y="822"/>
+        </scene>
+        <!--Mainmenu View Controller-->
+        <scene sceneID="K2e-ay-scS">
+            <objects>
+                <viewController id="Gdo-f2-8BQ" customClass="MainmenuViewController" customModule="Receptive_Music_Therapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8JQ-jy-76F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axf-C4-GgR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X38-Bu-EV0">
+                                <rect key="frame" x="50" y="94" width="314" height="175"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Melody Remedy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.47061389593908631" green="0.47061389593908631" blue="0.47061389593908631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="64" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Paw-3D-TwY">
+                                <rect key="frame" x="100" y="389" width="214" height="100"/>
+                                <color key="backgroundColor" red="0.71775856598984777" green="0.71775856598984777" blue="0.71775856598984777" alpha="0.3963773544520548" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qen-6R-x0u"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Receptive Music Therapy">
+                                            <attributes>
+                                                <color key="NSColor" red="0.22130789974619292" green="0.22130789974619292" blue="0.22130789974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="24" name="AvenirNext-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="medium"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="V7D-MT-2QA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RP-cK-a5G">
+                                <rect key="frame" x="100" y="564" width="214" height="100"/>
+                                <color key="backgroundColor" red="0.71775856599999999" green="0.71775856599999999" blue="0.71775856599999999" alpha="0.3963773545" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="42t-b1-Shh"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Musical         Distraction">
+                                            <attributes>
+                                                <color key="NSColor" red="0.27218829314720816" green="0.27218829314720816" blue="0.27218829314720816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="24" name="AvenirNext-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="medium"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Bv6-Jg-HYT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="GLe-jV-nWu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3RP-cK-a5G" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9CI-99-5Ir" secondAttribute="leading" constant="100" id="1ZP-rX-epp"/>
+                            <constraint firstItem="Paw-3D-TwY" firstAttribute="centerX" secondItem="8JQ-jy-76F" secondAttribute="centerX" id="Cj4-nT-84E"/>
+                            <constraint firstItem="9CI-99-5Ir" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Paw-3D-TwY" secondAttribute="trailing" constant="100" id="Dol-G1-iTi"/>
+                            <constraint firstItem="Axf-C4-GgR" firstAttribute="top" secondItem="8JQ-jy-76F" secondAttribute="top" id="JOK-Rc-RXa"/>
+                            <constraint firstAttribute="trailing" secondItem="X38-Bu-EV0" secondAttribute="trailing" constant="50" id="JZS-2E-GGV"/>
+                            <constraint firstItem="X38-Bu-EV0" firstAttribute="leading" secondItem="8JQ-jy-76F" secondAttribute="leading" constant="50" id="OhB-Ms-Lgg"/>
+                            <constraint firstItem="X38-Bu-EV0" firstAttribute="centerX" secondItem="8JQ-jy-76F" secondAttribute="centerX" id="PKk-dj-tIW"/>
+                            <constraint firstItem="9CI-99-5Ir" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3RP-cK-a5G" secondAttribute="trailing" constant="100" id="Rab-0A-SeD"/>
+                            <constraint firstItem="3RP-cK-a5G" firstAttribute="top" secondItem="Paw-3D-TwY" secondAttribute="bottom" constant="75" id="SZL-39-csH"/>
+                            <constraint firstItem="Paw-3D-TwY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9CI-99-5Ir" secondAttribute="leading" constant="100" id="WJs-4j-jLH"/>
+                            <constraint firstItem="Paw-3D-TwY" firstAttribute="top" secondItem="X38-Bu-EV0" secondAttribute="bottom" constant="120" id="acC-us-59W"/>
+                            <constraint firstItem="Axf-C4-GgR" firstAttribute="centerY" secondItem="8JQ-jy-76F" secondAttribute="centerY" id="acX-6D-McP"/>
+                            <constraint firstItem="Axf-C4-GgR" firstAttribute="leading" secondItem="9CI-99-5Ir" secondAttribute="leading" id="fh4-fB-j67"/>
+                            <constraint firstItem="Axf-C4-GgR" firstAttribute="trailing" secondItem="9CI-99-5Ir" secondAttribute="trailing" id="tfN-gp-KNM"/>
+                            <constraint firstItem="Axf-C4-GgR" firstAttribute="centerX" secondItem="8JQ-jy-76F" secondAttribute="centerX" id="uZg-6q-no6"/>
+                            <constraint firstAttribute="bottom" secondItem="Axf-C4-GgR" secondAttribute="bottom" id="vWi-Nx-AYA"/>
+                            <constraint firstItem="X38-Bu-EV0" firstAttribute="top" secondItem="9CI-99-5Ir" secondAttribute="top" constant="50" id="yWr-Sk-Lf4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9CI-99-5Ir"/>
+                    </view>
+                    <connections>
+                        <outlet property="animatedBackground" destination="Axf-C4-GgR" id="OIr-rB-wQZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCy-jp-FJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-828" y="556"/>
+        </scene>
+        <!--Decision View Controller-->
+        <scene sceneID="RLg-6c-rbL">
+            <objects>
+                <viewController id="heb-DT-Gaq" customClass="DecisionViewController" customModule="Receptive_Music_Therapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vp5-Pi-0UX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zkG-Md-4EX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8d-NT-gwD">
+                                <rect key="frame" x="50" y="94" width="314" height="200"/>
+                                <color key="backgroundColor" red="0.91364836689999995" green="0.91377657649999999" blue="0.91360801459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="n5x-ko-bw9"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Would you like to try a different song?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.41957002879999999" green="0.41963285210000001" blue="0.4195502102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l4w-s7-PWI">
+                                <rect key="frame" x="229.5" y="594" width="75" height="50"/>
+                                <color key="backgroundColor" red="0.91364836689999995" green="0.91377657649999999" blue="0.91360801459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Xqs-0S-jSN"/>
+                                    <constraint firstAttribute="width" constant="75" id="vS4-Qw-k4y"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="No">
+                                            <attributes>
+                                                <color key="NSColor" red="0.3529086709" green="0.35296267269999998" blue="0.35289168360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Gdo-f2-8BQ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="vaL-aR-C4M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tf7-oJ-PZI">
+                                <rect key="frame" x="109.5" y="594" width="75" height="50"/>
+                                <color key="backgroundColor" red="0.91364836689999995" green="0.91377657649999999" blue="0.91360801459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="6AF-bV-SYn"/>
+                                    <constraint firstAttribute="height" constant="50" id="R6L-r2-x50"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Yes">
+                                            <attributes>
+                                                <color key="NSColor" red="0.3529086709" green="0.35296267269999998" blue="0.35289168360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ZTv-II-oLe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tf7-oJ-PZI" firstAttribute="top" secondItem="E8d-NT-gwD" secondAttribute="bottom" constant="300" id="0Kr-No-cDx"/>
+                            <constraint firstItem="zkG-Md-4EX" firstAttribute="centerX" secondItem="Vp5-Pi-0UX" secondAttribute="centerX" id="9dI-87-9NA"/>
+                            <constraint firstItem="zkG-Md-4EX" firstAttribute="top" secondItem="Vp5-Pi-0UX" secondAttribute="top" id="BAE-5Z-eNy"/>
+                            <constraint firstItem="E8d-NT-gwD" firstAttribute="top" secondItem="GBf-hN-dnq" secondAttribute="top" constant="50" id="HvV-c0-vhF"/>
+                            <constraint firstItem="zkG-Md-4EX" firstAttribute="trailing" secondItem="GBf-hN-dnq" secondAttribute="trailing" id="J50-Mb-uA6"/>
+                            <constraint firstItem="E8d-NT-gwD" firstAttribute="leading" secondItem="GBf-hN-dnq" secondAttribute="leading" constant="50" id="ORO-Lm-hFe"/>
+                            <constraint firstItem="l4w-s7-PWI" firstAttribute="top" secondItem="E8d-NT-gwD" secondAttribute="bottom" constant="300" id="Wka-aI-6PV"/>
+                            <constraint firstItem="zkG-Md-4EX" firstAttribute="centerY" secondItem="Vp5-Pi-0UX" secondAttribute="centerY" id="XB4-Mz-3gU"/>
+                            <constraint firstItem="zkG-Md-4EX" firstAttribute="leading" secondItem="GBf-hN-dnq" secondAttribute="leading" id="YlD-cH-bMb"/>
+                            <constraint firstItem="GBf-hN-dnq" firstAttribute="trailing" secondItem="E8d-NT-gwD" secondAttribute="trailing" constant="50" id="cd6-GA-KBr"/>
+                            <constraint firstItem="l4w-s7-PWI" firstAttribute="centerX" secondItem="Vp5-Pi-0UX" secondAttribute="centerX" constant="60" id="hb6-YJ-R9j"/>
+                            <constraint firstItem="tf7-oJ-PZI" firstAttribute="centerX" secondItem="Vp5-Pi-0UX" secondAttribute="centerX" constant="-60" id="jkT-J3-FCF"/>
+                            <constraint firstAttribute="bottom" secondItem="zkG-Md-4EX" secondAttribute="bottom" id="kyr-QB-N7d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GBf-hN-dnq"/>
+                    </view>
+                    <connections>
+                        <outlet property="GradientBackground" destination="zkG-Md-4EX" id="NVQ-fR-fOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTa-uQ-soA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="822"/>
+        </scene>
+        <!--Thoughts View Controller-->
+        <scene sceneID="B6j-Z0-O8B">
+            <objects>
+                <viewController id="r2k-5a-jxm" customClass="ThoughtsViewController" customModule="Receptive_Music_Therapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U5r-2w-sFo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajj-PF-PDn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPs-ci-LvT">
+                                <rect key="frame" x="169.5" y="314" width="75" height="36.5"/>
+                                <color key="backgroundColor" red="0.91364836692810059" green="0.91377657651901245" blue="0.91360801458358765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="3pR-EE-4Cb"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Done">
+                                            <attributes>
+                                                <color key="NSColor" red="0.3529086709022522" green="0.3529626727104187" blue="0.35289168357849121" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="AvenirNext-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="r2k-5a-jxm" eventType="touchUpInside" id="6VJ-5o-kDz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8j-VV-xc8">
+                                <rect key="frame" x="50" y="94" width="314" height="200"/>
+                                <color key="backgroundColor" red="0.91364836692810059" green="0.91377657651901245" blue="0.91360801458358765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="nEa-rJ-5Yc"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="In the box below, type describe emotions and feelings you felt while listening to the music.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.41957002878189087" green="0.41963285207748413" blue="0.41955021023750305" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter in you thoughts." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fC-gk-hTB">
+                                <rect key="frame" x="50" y="394" width="314" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="zyM-RM-EUU"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YPs-ci-LvT" firstAttribute="top" secondItem="R8j-VV-xc8" secondAttribute="bottom" constant="20" id="6GC-sw-F78"/>
+                            <constraint firstItem="ajj-PF-PDn" firstAttribute="leading" secondItem="nHy-wm-yrx" secondAttribute="leading" id="Bot-g0-sYm"/>
+                            <constraint firstItem="nHy-wm-yrx" firstAttribute="trailing" secondItem="7fC-gk-hTB" secondAttribute="trailing" constant="50" id="CsD-Sl-OSG"/>
+                            <constraint firstItem="7fC-gk-hTB" firstAttribute="top" secondItem="R8j-VV-xc8" secondAttribute="bottom" constant="100" id="E63-ze-ogh"/>
+                            <constraint firstAttribute="bottom" secondItem="ajj-PF-PDn" secondAttribute="bottom" id="FYj-Y5-aH8"/>
+                            <constraint firstItem="ajj-PF-PDn" firstAttribute="top" secondItem="U5r-2w-sFo" secondAttribute="top" id="Ida-bJ-xDL"/>
+                            <constraint firstAttribute="trailing" secondItem="ajj-PF-PDn" secondAttribute="trailing" id="Siy-X2-hLR"/>
+                            <constraint firstItem="R8j-VV-xc8" firstAttribute="leading" secondItem="nHy-wm-yrx" secondAttribute="leading" constant="50" id="Sym-Gh-GJn"/>
+                            <constraint firstItem="R8j-VV-xc8" firstAttribute="top" secondItem="nHy-wm-yrx" secondAttribute="top" constant="50" id="T3i-hN-mob"/>
+                            <constraint firstAttribute="trailing" secondItem="R8j-VV-xc8" secondAttribute="trailing" constant="50" id="byW-kV-Xdq"/>
+                            <constraint firstItem="7fC-gk-hTB" firstAttribute="leading" secondItem="nHy-wm-yrx" secondAttribute="leading" constant="50" id="gSO-iN-RL0"/>
+                            <constraint firstItem="ajj-PF-PDn" firstAttribute="centerX" secondItem="U5r-2w-sFo" secondAttribute="centerX" id="iDg-gn-CPZ"/>
+                            <constraint firstItem="YPs-ci-LvT" firstAttribute="centerX" secondItem="7fC-gk-hTB" secondAttribute="centerX" id="kHd-OC-1Hs"/>
+                            <constraint firstItem="ajj-PF-PDn" firstAttribute="centerY" secondItem="U5r-2w-sFo" secondAttribute="centerY" id="ybV-cB-gHU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nHy-wm-yrx"/>
+                    </view>
+                    <connections>
+                        <outlet property="GradientBackground" destination="ajj-PF-PDn" id="uRy-G4-AtU"/>
+                        <outlet property="thoughtsTextbox" destination="7fC-gk-hTB" id="tlB-9c-ilv"/>
+                        <segue destination="heb-DT-Gaq" kind="presentation" identifier="TransitionToContinueDecision" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="zfS-um-Hgc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLm-JD-xEj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="1572"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="Bcy-hh-Ncd">
+            <objects>
+                <viewController id="Bv6-Jg-HYT" customClass="GameViewController" customModule="Receptive_Music_Therapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ekb-Af-isb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FtE-WZ-dfE">
+                                <rect key="frame" x="20" y="787" width="100" height="75"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="f9T-UW-wUg"/>
+                                    <constraint firstAttribute="height" constant="75" id="yhK-KY-4tC"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Back">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="22" name="Avenir-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backToMenu:" destination="Bv6-Jg-HYT" eventType="touchUpInside" id="i0b-mR-7Y3"/>
+                                    <action selector="testButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Vim-Sy-Dy6"/>
+                                    <segue destination="Gdo-f2-8BQ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="xxs-Mu-gYq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FtE-WZ-dfE" firstAttribute="leading" secondItem="ekb-Af-isb" secondAttribute="leadingMargin" id="d5b-14-ca8"/>
+                            <constraint firstItem="FtE-WZ-dfE" firstAttribute="bottom" secondItem="JCf-ev-5KM" secondAttribute="bottom" id="g35-Uq-NFm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JCf-ev-5KM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OiO-uO-hYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1772" y="556"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="headphones" catalog="system" width="64" height="54"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xxs-Mu-gYq"/>
+        <segue reference="rrc-ZR-bbI"/>
+        <segue reference="V7D-MT-2QA"/>
+    </inferredMetricsTieBreakers>
+</document>
